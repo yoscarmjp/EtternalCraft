@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/header.css">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/css/modal.css">
+    <title>EtternalCraft</title>
+</head>
+<body>
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            <img src="./src/img/logo.png" alt="Logo">
+            <div class="logo-text">
+                <h1>EtternalCraft</h1>
+                <p>Donde tu destino es eterno!</p>
+            </div>
+        </div>
+        <!-- Status -->
+        <p class="status" id="status">¡Cargando!</p>
+    </header>
+    <main>
+        <img src="./src/img/logo.png" alt="Logo">
+        <h1>Bienvenido a <span>EtternalCraft</span></h1>
+        <p>Experimenta una aventura única en nuestro servidor de Minecraft con mods épicos, criaturas legendarias y un mundo lleno de posibilidades infinitas.</p>
+        <div class="btns">
+            <a href="">
+                <svg  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" >
+                    <path d="m20,4h-8.59l-1.41-1.41c-.38-.38-.88-.59-1.41-.59h-4.59c-1.1,0-2,.9-2,2v14c0,1.1.9,2,2,2h16c1.1,0,2-.9,2-2V6c0-1.1-.9-2-2-2Zm0,14H4s0-12,0-12h16v12Z"></path><path d="M11 8 11 12 8 12 12 16 16 12 13 12 13 8 11 8z"></path>
+                </svg>
+                Descargar ModPack
+            </a>
+            <a href="" id="install">
+                <svg  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" >
+                    <path d="M21 3h-7c-.77 0-1.47.3-2 .78-.53-.48-1.23-.78-2-.78H3c-.55 0-1 .45-1 1v15c0 .55.45 1 1 1h5.76c.53 0 1.04.21 1.41.59l1.12 1.12s.02.01.03.02c.09.08.18.15.29.2.12.05.25.08.38.08s.26-.03.38-.08c.11-.05.21-.12.29-.2 0 0 .02-.01.03-.02l1.12-1.12c.37-.37.89-.59 1.41-.59h5.76c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1ZM8.76 18H4V5h6c.55 0 1 .45 1 1v12.69c-.66-.44-1.44-.69-2.24-.69M20 18h-4.76c-.8 0-1.58.25-2.24.69V6c0-.55.45-1 1-1h6z"></path>
+                </svg>
+                Guía de Instalación
+            </a>
+        </div>
+
+        <div class="status-container">
+            <div class="status-box">
+                <svg class="status-icon" xmlns="http://www.w3.org/2000/svg"fill="currentColor" viewBox="0 0 24 24" >
+                    <path d="M20 13H4c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2M4 19v-4h16v4z"></path><path d="M17 16h2v2h-2zM14 16h2v2h-2zM20 3H4c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2M4 9V5h16v4z"></path><path d="M17 6h2v2h-2zM14 6h2v2h-2z"></path>
+                </svg>
+                <h1>Estado</h1>
+                <p id="status-c">¡Cargando!</p>
+            </div>
+            <div class="status-box">
+                <svg class="players-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" >
+                    <path d="M12 2a5 5 0 1 0 0 10 5 5 0 1 0 0-10M4 22h16c.55 0 1-.45 1-1v-1c0-3.86-3.14-7-7-7h-4c-3.86 0-7 3.14-7 7v1c0 .55.45 1 1 1"></path>
+                </svg>
+                <h1>Jugadores</h1>
+                <p id="players">¡Cargando!</p>
+            </div>
+            <div class="status-box">
+                <svg class="version-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" >
+                    <path d="M16 11a1 1 0 1 0 0 2 1 1 0 1 0 0-2M18 9a1 1 0 1 0 0 2 1 1 0 1 0 0-2M16 7a1 1 0 1 0 0 2 1 1 0 1 0 0-2M14 9a1 1 0 1 0 0 2 1 1 0 1 0 0-2M8 8a2 2 0 1 0 0 4 2 2 0 1 0 0-4"></path><path d="M17 4H7C4.24 4 2 6.24 2 9v7.88a3.124 3.124 0 0 0 5.33 2.21l1.96-1.96c1.45-1.45 3.97-1.45 5.41 0l1.96 1.96c.59.59 1.37.91 2.21.91 1.72 0 3.12-1.4 3.12-3.12V9c0-2.76-2.24-5-5-5Zm3 12.88a1.118 1.118 0 0 1-1.91.79l-1.96-1.96c-1.1-1.1-2.56-1.71-4.12-1.71s-3.02.61-4.12 1.71l-1.96 1.96a1.118 1.118 0 0 1-1.91-.79V9c0-1.65 1.35-3 3-3h10c1.65 0 3 1.35 3 3v7.88Z"></path>
+                </svg>
+                <h1>Versión</h1>
+                <p id="version">¡Cargando!</p>
+            </div>
+            <div class="status-box">
+                <svg class="modpack-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" >
+                    <path d="m19.89,2.54c-.17-.33-.51-.54-.89-.54h-9c-.39,0-.75.23-.91.59l-5,11c-.14.31-.11.67.07.96.18.29.5.46.84.46h5v6c0,.43.28.82.69.95.1.03.21.05.31.05.31,0,.62-.15.81-.41l8-11c.22-.3.25-.71.08-1.04-.17-.34-.52-.55-.89-.55h-3.06l3.87-5.42c.22-.3.25-.71.08-1.04Zm-6.7,6.88c-.22.3-.25.71-.08,1.04s.51.54.89.54h3.04l-5.04,6.92v-3.92c0-.55-.45-1-1-1h-4.45l4.09-9h6.41l-3.87,5.42Z"></path>
+                </svg>
+                <h1>ModPack</h1>
+                <p>Aventura/Diversión</p>
+            </div>
+        </div>
+
+        <div class="info-text">
+            <h1>Conecta al Servidor</h1>
+            <p>Toda la información que necesitas para unirte</p>
+        </div>
+
+        <div class="info">
+            <!-- data -->
+            <div class="data">
+                <div class="title">
+                    <svg class="status-icon" xmlns="http://www.w3.org/2000/svg"fill="currentColor" viewBox="0 0 24 24" >
+                        <path d="M20 13H4c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2M4 19v-4h16v4z"></path><path d="M17 16h2v2h-2zM14 16h2v2h-2zM20 3H4c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2M4 9V5h16v4z"></path><path d="M17 6h2v2h-2zM14 6h2v2h-2z"></path>
+                    </svg>
+                    <h1>Datos del servidor</h1>
+                </div>
+                <div class="info-article">
+                    <p>IP del Servidor</p>
+                    <div class="ip">
+                        <span id="ip">ethernal.theoasiss.us</span>
+                        <button id="copy">Copiar</button>
+                    </div>
+                </div>
+                <div class="info-article">
+                    <p>Versión</p>
+                    <p>1.20.1 (Forge)</p>
+                </div>
+            </div>
+            <!-- install -->
+            <div class="data">
+                <div class="title">
+                    <svg class="version-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" >
+                        <path d="M16 11a1 1 0 1 0 0 2 1 1 0 1 0 0-2M18 9a1 1 0 1 0 0 2 1 1 0 1 0 0-2M16 7a1 1 0 1 0 0 2 1 1 0 1 0 0-2M14 9a1 1 0 1 0 0 2 1 1 0 1 0 0-2M8 8a2 2 0 1 0 0 4 2 2 0 1 0 0-4"></path><path d="M17 4H7C4.24 4 2 6.24 2 9v7.88a3.124 3.124 0 0 0 5.33 2.21l1.96-1.96c1.45-1.45 3.97-1.45 5.41 0l1.96 1.96c.59.59 1.37.91 2.21.91 1.72 0 3.12-1.4 3.12-3.12V9c0-2.76-2.24-5-5-5Zm3 12.88a1.118 1.118 0 0 1-1.91.79l-1.96-1.96c-1.1-1.1-2.56-1.71-4.12-1.71s-3.02.61-4.12 1.71l-1.96 1.96a1.118 1.118 0 0 1-1.91-.79V9c0-1.65 1.35-3 3-3h10c1.65 0 3 1.35 3 3v7.88Z"></path>
+                    </svg>
+                    <h1>Guía Rápida</h1>
+                </div>
+                <div class="step">
+                    <span>1</span>
+                    <div class="step-info">
+                        <h1>Descarga el ModPack</h1>
+                        <p>Obtén nuestro pack personalizado de mods</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <span>2</span>
+                    <div class="step-info">
+                        <h1>Instala con el Launcher</h1>
+                        <p>Sigue nuestra guía de instalación paso a paso</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <span>3</span>
+                    <div class="step-info">
+                        <h1>¡Conecta y Juega!</h1>
+                        <p>Usa la IP del servidor para conectarte</p>
+                    </div>
+                </div>
+                <div class="step-btns">
+                    <a href="">
+                        <svg  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" >
+                            <path d="m20,4h-8.59l-1.41-1.41c-.38-.38-.88-.59-1.41-.59h-4.59c-1.1,0-2,.9-2,2v14c0,1.1.9,2,2,2h16c1.1,0,2-.9,2-2V6c0-1.1-.9-2-2-2Zm0,14H4s0-12,0-12h16v12Z"></path><path d="M11 8 11 12 8 12 12 16 16 12 13 12 13 8 11 8z"></path>
+                        </svg>
+                        Descargar ModPack
+                    </a>
+                    <a href="">
+                        <svg  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" >
+                            <path d="M21 3h-7c-.77 0-1.47.3-2 .78-.53-.48-1.23-.78-2-.78H3c-.55 0-1 .45-1 1v15c0 .55.45 1 1 1h5.76c.53 0 1.04.21 1.41.59l1.12 1.12s.02.01.03.02c.09.08.18.15.29.2.12.05.25.08.38.08s.26-.03.38-.08c.11-.05.21-.12.29-.2 0 0 .02-.01.03-.02l1.12-1.12c.37-.37.89-.59 1.41-.59h5.76c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1ZM8.76 18H4V5h6c.55 0 1 .45 1 1v12.69c-.66-.44-1.44-.69-2.24-.69M20 18h-4.76c-.8 0-1.58.25-2.24.69V6c0-.55.45-1 1-1h6z"></path>
+                        </svg>
+                        Ver Guía
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal" id="modal">
+        <div class="checkmark-circle">
+            <div class="background"></div>
+            <svg class="checkmark" viewBox="0 0 52 52">
+              <path class="checkmark__check" fill="none" d="M14 27l10 10 20-20" />
+            </svg>
+            <p class="success-text">¡Dirección ip copiada con éxito!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Sitio web hecho por YoscarMJP • 2025</p>
+    </footer>
+
+
+    <script src="./src/js/api.js"></script>
+</body>
+</html>
