@@ -274,7 +274,8 @@ main .info .data .step-btns{
     gap: 8px;
 }
 
-main .info .data .step-btns a{
+main .info .data .step-btns a,
+main .info .data .step-btns button{
     width: 100%;
     background-color: #6b21a8;
     color: white;
@@ -288,7 +289,8 @@ main .info .data .step-btns a{
     transition: all 300ms ease-in-out;
 }
 
-main .info .data .step-btns a:hover{
+main .info .data .step-btns a:hover,
+main .info .data .step-btns button:hover{
     background-color: #a855f7;
 }
 

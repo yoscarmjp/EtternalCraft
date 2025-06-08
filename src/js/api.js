@@ -1,11 +1,15 @@
-const statusSrv = document.getElementById('status')
-const statusCsrv = document.getElementById('status-c')
-const playersSrv = document.getElementById('players')
-const versionSrv = document.getElementById('version')
+const statusSrv = document.getElementById('status');
+const statusCsrv = document.getElementById('status-c');
+const playersSrv = document.getElementById('players');
+const versionSrv = document.getElementById('version');
 
 const ip = document.getElementById('ip');
 const copyBtn = document.getElementById('copy');
 const modal = document.getElementById('modal')
+const install = document.getElementById('install');
+const install2 = document.getElementById('install-2');
+const installGuide = document.getElementById('install-guide');
+
 
 async function getServerInfo(){
     try{
@@ -38,5 +42,27 @@ copyBtn.addEventListener('click', () =>{
     setTimeout(() => {
         modal.style.display = 'none';
     }, 2000);
+})
+
+install.addEventListener('click', () => {
+    if(installGuide.style.display === 'none'){
+        installGuide.style.display = 'grid'
+    }else{
+        installGuide.style.display = 'none'
+    }
+})
+
+install2.addEventListener('click', () => {
+    if(installGuide.style.display === 'none'){
+        installGuide.style.display = 'grid'
+    }else{
+        installGuide.style.display = 'none'
+    }
+})
+
+window.addEventListener('click', function(e){
+    if(installGuide.style.display === 'grid' && e.target === installGuide){
+        installGuide.style.display = 'none'
+    }
 })
 
