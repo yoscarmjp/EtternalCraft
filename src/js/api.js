@@ -13,7 +13,7 @@ const installGuide = document.getElementById('install-guide');
 
 async function getServerInfo(){
     try{
-        const data = await fetch("https://api.mcsrvstat.us/1/147.185.221.28:48529")
+        const data = await fetch("https://api.mcsrvstat.us/1/etternal.theoasiss.us")
         const serverData = await data.json()
         console.log(serverData)
         statusSrv.textContent = 'En línea'
